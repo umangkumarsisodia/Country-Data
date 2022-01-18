@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info- Get information about any country</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="site-main-wrapper">
+        <button class="hemburger"><i class="fas fa-bars fa-3x"></i></button>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <form name="myForm1">
+                <input name="searchBox1" type="text" placeholder="Search...">
+                <button id="btn1">Search</button>
+            </form>
+            <button class="closeBtn"><i class="fas fa-times fa-2x"></i></button>
+        </div>
+        <section id="head">
+            <nav id="main-nav">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <form name="myForm">
+                    <input name="searchBox" type="text" placeholder="Search...">
+                    <button id="btn">Search</button>
+                </form>
+            </nav>
+        </section>
+        <div id="first">
+            <section id="main">
+                <div class="list">
+                    <div id="hSection">
+                        <p>Here the name of all the countries provided below:</p>
+                        <img id="worldImage" src="./img/world.png" alt="World image">
+                    </div>
+                    <div>
+                        <ol id="countryList"></ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="second">
+            <p id="countryHead"></p>
+            <img src="./img/googlemap.png" width="145" height="126" alt="Planets" usemap="#googleMap" id="mapImg">
+            <map name="googleMap">
+                <area shape="rect" coords="0,0,82,126" alt="Map Image" target="_blank" id="mapArea">
+            </map>
+            <div id="data">
+                <table id="table"></table>
+                <img src="" alt="Flag image" id="flagImage">
+            </div>
+            <h1>Languages Spoken</h1>
+            <p id="lngSpoken"></p>
+        </section>
+    </div>
+    <script src="https://kit.fontawesome.com/84059f4353.js" crossorigin="anonymous"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
